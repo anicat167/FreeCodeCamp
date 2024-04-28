@@ -1,0 +1,179 @@
+/* MAIN STYLES*/
+
+:root {
+    --nav-color: rgb(255,255,255);
+  }
+  * {
+    font-family: Verdana, sans-serif;
+    box-sizing: border-box;
+  }
+  html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+    /* HEADER */
+  
+    #nav-bar {
+      position: fixed;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 1.5rem;
+      background-color: var(--nav-color);
+    }
+    .nav-link {
+      margin-right: 2rem;
+      text-decoration: none;
+      cursor: pointer;
+      color: black;
+  
+    }
+    .nav-link:hover {
+      color: rgba(10,10,100, 0.25);
+    }
+    #header-img {
+      cursor: pointer; 
+      height: 100px;
+    }
+  
+    /* FORM */
+  
+    .title {
+      margin-top: 20rem;
+      text-align: center;
+    }
+    #form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    #email {
+      padding: 0.25rem;
+      width: 35vw;
+    }
+    #submit {
+      margin-top: 15px;
+      background-color: rgba(0,255,0, 0.25);
+      border: none;
+      padding: 0.5rem;
+    }
+    #submit:hover {
+      background-color: rgba(0,255,0, 0.5);
+    }
+  
+    /* MAIN */
+  
+    #main-content {
+      margin-top: 10rem;
+      margin-bottom: 10rem;
+      display: flex;
+      flex-direction: column;
+    }
+    #main-content h3, p {
+      margin: auto;
+      width: 50%;
+    }
+    iframe {
+      display: flex;
+      justify-content: center;
+      margin: 10rem auto;
+    }
+    .packet-of-flowers {
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .packet-of-flower {
+      text-align: center;
+      border: 1px solid black;
+      width: 25%;
+      margin-top: 15px; 
+      margin-right: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center; 
+    }
+    .packet-of-flower button {
+      background-color:  rgba(0,255,0, 0.25);
+      border: none;
+      margin-top: 15px;
+      padding: 10px;
+      width: 60%;
+      cursor: pointer;
+      margin-bottom: 10px;
+      transition: 0.5s;
+    }
+    .packet-of-flower button:hover {
+      background-color:  rgba(0,255,0, 0.5);
+    }
+    .bundle-title {
+      background-color: rgba(0,0,0,0.11);
+      padding: 0;
+      width: 100%;
+      margin-top: 0;
+      padding-top: 5px;
+    }
+  
+    /* FOOTER */
+  
+    #footer {
+      display: flex;
+      width: 100%;
+      margin: 0;
+      padding: 0.5rem;
+      background-color: rgba(10,10,10, 0.15);
+      justify-content: center;
+    }
+    .footer-links {
+      display: flex;
+      padding-right: 2rem;
+      text-decoration: none;
+      color: rgba(0,0,0, 0.75);
+    }
+    .Copyright {
+      font-size: 10;
+      color: rgba(0,0,0, 0.5);
+    }
+  
+  /* MEDIA QUERY RESPONSIVE*/
+  
+  @media only screen and (max-width: 720) {
+    #main- content h3, p {
+      text-align: left;
+      font-size: 8;
+      margin: 0;
+    }
+    #video {
+      width: 620;
+      height: 360;
+    }
+    .packet-of-flowers {
+      display: flex;
+      flex-direction: column;
+    }
+    #header-img {
+      height: 75px; 
+    }
+  }
+  @media only screen and (max-width: 1000) {
+    #main-content h3, p {
+      text-align: left;
+      font-size: 10;
+      margin: 0;
+    }
+    #video {
+      width: 620;
+      height: 360;
+    }
+    .packet-of-flowers {
+      display: flex;
+      flex-direction: column;
+    }
+    #header-img {
+     height: 75px; 
+    }
+  }
